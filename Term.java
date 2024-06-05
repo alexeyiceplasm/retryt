@@ -17,18 +17,6 @@
 package jackpal.androidterm;
 
 import android.text.TextUtils;
-import jackpal.androidterm.compat.ActionBarCompat;
-import jackpal.androidterm.compat.ActivityCompat;
-import jackpal.androidterm.compat.AndroidCompat;
-import jackpal.androidterm.compat.MenuItemCompat;
-import jackpal.androidterm.emulatorview.EmulatorView;
-import jackpal.androidterm.emulatorview.TermSession;
-import jackpal.androidterm.emulatorview.UpdateCallback;
-import jackpal.androidterm.emulatorview.compat.ClipboardManagerCompat;
-import jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatFactory;
-import jackpal.androidterm.emulatorview.compat.KeycodeConstants;
-import jackpal.androidterm.util.SessionList;
-import jackpal.androidterm.util.TermSettings;
 import android.content.ContentResolver;
 import org.apache.commons.io.IOUtils;
 import android.os.StrictMode;
