@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jackpal.androidterm"
+      android:versionName="1.0.70"
+      android:versionCode="71"
+      android:installLocation="auto">
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application android:icon="@drawable/ic_launcher"
+                android:label="@string/application_terminal"
+                android:hardwareAccelerated="true"
+                android:theme="@style/Theme">
+        <activity android:name="Term"
+                android:launchMode="singleTask"
+                android:configChanges="keyboard|keyboardHidden|orientation"
+                android:windowSoftInputMode="adjustResize|stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+       </activity>
+      
+    <meta-data
+      android:name="com.sec.android.support.multiwindow"
+      android:value="true">
+        </meta-data>
+    </application>
+</manifest>
